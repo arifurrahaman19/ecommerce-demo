@@ -1,0 +1,39 @@
+.pagination {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 50px;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.103);
+
+  li {
+    font-size: 14px;
+    font-family: $segoe;
+    font-weight: normal;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      color: $green;
+    }
+
+    &.active {
+      height: 30px;
+      width: 30px;
+      background-color: $green;
+      border-radius: 50px;
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

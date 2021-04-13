@@ -1,0 +1,125 @@
+.fliters {
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 20px 0;
+
+  h2 {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $segoe;
+    color: #4d4d4d;
+  }
+
+  a.more {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $segoe;
+    color: $green;
+    text-decoration: none;
+    padding: 0 20px;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .filter-item {
+    padding: 0 20px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: normal;
+      font-family: $segoe;
+      color: #707070;
+      cursor: pointer;
+    }
+  }
+
+  .filter-tags {
+    padding: 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed $gray;
+    margin-bottom: 20px;
+
+    .filter-tag {
+      padding: 2px 32px 2px 14px;
+      border: 1px solid $border-color;
+      border-radius: 50px;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 10px;
+      margin-right: 5px;
+      width: fit-content;
+
+      img {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      p {
+        font-size: 14px;
+        font-family: $segoe;
+        color: $gray;
+        width: fit-content;
+      }
+
+      &.clear-all {
+        border-color: #00b55b;
+        background-color: #e5fff2;
+        padding: 2px 14px;
+        p {
+          color: $green;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .category {
+    padding: 0 20px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px dashed $gray;
+    margin-bottom: 20px;
+
+    .category-nested {
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #707070;
+        font-family: $segoe;
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 14px;
+        font-weight: normal;
+        color: #707070;
+        font-family: $segoe;
+        margin-bottom: 10px;
+      }
+
+      .neted-item {
+        margin-left: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .brands {
+    .title-search {
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      padding: 0 20px;
+      margin-bottom: 10px;
+    }
+  }
+}

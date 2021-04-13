@@ -1,0 +1,58 @@
+.product-card {
+  padding: 20px 20px 10px 20px;
+  max-width: calc(25% - 10px);
+  min-height: 320px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__image {
+    width: 170px;
+    height: 200px;
+    margin: auto;
+
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__body {
+    &__title {
+      font-size: 14px;
+      font-weight: normal;
+      font-family: $segoe;
+      color: $black;
+      text-decoration: none;
+      line-height: 1;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    &__price {
+      font-size: 16px;
+      font-weight: 600;
+      font-family: $segoe;
+      color: $black;
+    }
+
+    &__offerPrice {
+      p {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: $segoe;
+        color: $gray;
+
+        &:first-child {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

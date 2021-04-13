@@ -1,0 +1,24 @@
+.search {
+  position: relative;
+  
+
+  input.form-control {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: $segoe;
+
+    &:focus,
+    &:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
